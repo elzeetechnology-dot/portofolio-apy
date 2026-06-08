@@ -112,7 +112,7 @@ export default function Hero() {
             className="relative h-[520px] w-[400px] overflow-hidden rounded-3xl border bg-muted shadow-xl"
           >
             <Image
-              src="/images/aripuja.jpg"
+              src="/images/apy1.jpg"
               alt="Ari Puja Yuwana"
               fill
               priority

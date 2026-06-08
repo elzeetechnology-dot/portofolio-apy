@@ -50,7 +50,7 @@ export default function ResumePage() {
 
             <div className="relative h-52 w-52 overflow-hidden rounded-3xl border shadow-2xl">
               <Image
-                src="/images/aripuja.jpg"
+                src="/images/apy1.jpg"
                 alt="Ari Puja Yuwana"
                 fill
                 priority
