@@ -1,4 +1,6 @@
 import { Resend } from "resend";
+export const dynamic = "force-dynamic";
+
 
 export async function POST(req: Request) {
   // Pindahkan inisialisasi ke dalam handler agar tidak dieksekusi saat build time
