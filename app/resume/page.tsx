@@ -50,12 +50,13 @@ export default function ResumePage() {
 
             <div className="relative h-52 w-52 overflow-hidden rounded-3xl border shadow-2xl">
               <Image
-                src="/images/apy1.jpg"
-                alt="Ari Puja Yuwana"
-                fill
-                priority
-                className="object-cover"
-              />
+  src="/images/apy1.jpg"
+  alt="Ari Puja Yuwana"
+  fill
+  priority
+  sizes="208px"
+  className="object-cover"
+/>
               
             </div>
 
@@ -98,6 +99,44 @@ export default function ResumePage() {
 
         </section>
 
+<section className="mt-16">
+  <p className="mb-3 text-sm font-medium text-primary">
+    Career Highlights
+  </p>
+
+  <div className="grid gap-6 md:grid-cols-3">
+    <div className="rounded-3xl border p-8">
+      <h3 className="text-3xl font-bold text-primary">
+        1,200+
+      </h3>
+
+      <p className="mt-3 text-muted-foreground">
+        Fuel Station Sites Supported
+      </p>
+    </div>
+
+    <div className="rounded-3xl border p-8">
+      <h3 className="text-3xl font-bold text-primary">
+        4
+      </h3>
+
+      <p className="mt-3 text-muted-foreground">
+        Enterprise Organizations
+      </p>
+    </div>
+
+    <div className="rounded-3xl border p-8">
+      <h3 className="text-3xl font-bold text-primary">
+        10+
+      </h3>
+
+      <p className="mt-3 text-muted-foreground">
+        IT & Digital Projects
+      </p>
+    </div>
+  </div>
+</section>
+
         {/* SUMMARY */}
         <section className="mt-16">
           <p className="mb-3 text-sm font-medium text-primary">
@@ -112,27 +151,25 @@ export default function ResumePage() {
           <div className="mt-8 space-y-6 leading-8 text-muted-foreground">
 
             <p>
-              I am an IT System Specialist with experience
-              in infrastructure management, system
-              administration, technical support, and web
-              application development.
-            </p>
+  IT System Specialist with experience supporting enterprise
+  infrastructure, monitoring systems, technical operations,
+  and digital transformation initiatives across energy,
+  manufacturing, and banking industries.
+</p>
 
-            <p>
-              Throughout my career, I have supported
-              enterprise environments across manufacturing,
-              banking, and energy industries, ensuring
-              reliable operations through monitoring,
-              troubleshooting, automation, and digital
-              transformation initiatives.
-            </p>
+<p>
+  Experienced in managing monitoring platforms, infrastructure
+  services, troubleshooting, incident response, and enterprise
+  support environments. Currently supporting operational
+  monitoring systems across more than 1,200 fuel station sites
+  nationwide.
+</p>
 
-            <p>
-              Beyond infrastructure and operations, I also
-              enjoy building web-based solutions and
-              internal systems that improve efficiency and
-              support business growth.
-            </p>
+<p>
+  Passionate about building scalable digital solutions,
+  web-based applications, operational dashboards, and systems
+  that improve business efficiency and reliability.
+</p>
 
           </div>
         </section>
@@ -150,30 +187,30 @@ export default function ResumePage() {
           <div className="mt-10 border-l pl-8">
 
             {[
-              {
-                year: "2024 - Present",
-                company: "PT Pertamina Retail",
-                role: "IT System Specialist",
-                desc: "Managing monitoring systems, infrastructure, troubleshooting, enterprise support, and digital solutions for operational environments.",
-              },
-              {
-                year: "2022 - 2024",
-                company: "PT Bridgestone Tire Indonesia",
-                role: "IT Support",
-                desc: "Provided technical support, infrastructure maintenance, Microsoft ecosystem administration, and end-user support.",
-              },
-              {
-                year: "2022",
-                company: "PT Bank Mandiri",
-                role: "IT Support",
-                desc: "Supported banking operational systems, hardware deployment, and IT service management.",
-              },
-              {
-                year: "2015",
-                company: "PT So Good Food",
-                role: "IT Support",
-                desc: "Handled IT operational support, troubleshooting, and user assistance within manufacturing environments.",
-              },
+            {
+  year: "2024 - Present",
+  company: "PT Pertamina Retail",
+  role: "IT System Specialist",
+  desc: "Supporting monitoring infrastructure across 1,200+ fuel station sites nationwide. Managing ATG monitoring systems, alarm systems, operational dashboards, incident response, troubleshooting, and digital solution development.",
+},
+{
+  year: "2022 - 2024",
+  company: "PT Bridgestone Tire Indonesia",
+  role: "IT Support",
+  desc: "Provided enterprise IT support, infrastructure maintenance, Microsoft ecosystem administration, endpoint management, and operational support for manufacturing environments.",
+},
+{
+  year: "2022",
+  company: "PT Bank Mandiri",
+  role: "IT Support",
+  desc: "Supported banking operational systems, hardware deployment, software installation, troubleshooting, and IT service management processes.",
+},
+{
+  year: "Jan 2015 - Jun 2015",
+  company: "PT So Good Food",
+  role: "IT Support",
+  desc: "Provided IT operational support, hardware troubleshooting, user assistance, and daily operational system support within manufacturing environments.",
+},
             ].map((item) => (
               <div
                 key={item.company}
@@ -216,17 +253,19 @@ export default function ResumePage() {
 
             {[
               {
-                title: "Website Monitoring SPBU",
-                tech: "Laravel • MySQL • REST API • Bootstrap",
-              },
-              {
-                title: "Company Profile Website",
-                tech: "Next.js • React • Tailwind CSS",
-              },
-              {
-                title: "Mobile Application",
-                tech: "Android • Java • REST API",
-              },
+  title: "Website Monitoring SPBU",
+  tech: "Laravel • MySQL • REST API • Bootstrap",
+},
+
+{
+  title: "Company Profile Website",
+  tech: "Next.js • React • Tailwind CSS",
+},
+
+{
+  title: "Operational Mobile Application",
+  tech: "Android • Java • REST API",
+},
             ].map((project) => (
               <div
                 key={project.title}

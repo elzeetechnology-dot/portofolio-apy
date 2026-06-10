@@ -17,27 +17,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://your-domain.vercel.app"),
+  metadataBase: new URL("https://aripuja.vercel.app"),
 
   title: {
-    default: "Ari Puja Yuwana",
+    default: "Ari Puja Yuwana | IT System Specialist",
     template: "%s | Ari Puja Yuwana",
   },
 
   description:
-    "IT System Specialist experienced in Enterprise Infrastructure, Monitoring Systems, Technical Support, and Digital Solutions.",
+    "IT System Specialist experienced in enterprise infrastructure, monitoring systems, digital solutions, web development, and operational technology.",
 
   keywords: [
     "Ari Puja Yuwana",
     "IT System Specialist",
-    "System Administrator",
     "Infrastructure Engineer",
-    "IT Support",
-    "Monitoring System",
-    "Laravel",
-    "Next.js",
+    "Monitoring Systems",
+    "Next.js Developer",
+    "Laravel Developer",
     "Microsoft Intune",
     "Azure",
+    "Enterprise IT",
   ],
 
   authors: [
@@ -49,40 +48,80 @@ export const metadata: Metadata = {
   creator: "Ari Puja Yuwana",
 
   openGraph: {
-    title: "Ari Puja Yuwana",
+    title: "Ari Puja Yuwana | IT System Specialist",
+
     description:
-      "Enterprise Infrastructure & Digital Solutions",
+      "Experienced in enterprise infrastructure, monitoring systems, digital solutions, and web development.",
 
-    url: "https://aripuja.vercel.app/",
+    url: "https://aripuja.vercel.app",
 
-    siteName: "Ari Puja Yuwana",
+    siteName: "Ari Puja Yuwana Portfolio",
+
+    locale: "en_US",
+
+    type: "website",
 
     images: [
       {
         url: "/opengraph-image",
+
         width: 1200,
         height: 630,
+
+        alt: "Ari Puja Yuwana",
       },
     ],
-
-    locale: "en_US",
-    type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
+
     title: "Ari Puja Yuwana",
+
     description:
-      "Enterprise Infrastructure & Digital Solutions",
+      "IT System Specialist | Infrastructure | Monitoring Systems | Digital Solutions",
+
     images: ["/opengraph-image"],
   },
-  icons: {
-  icon: "/favicon.svg",
-},
 
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
+const personSchema = {
+  "@context": "https://schema.org",
 
+  "@type": "Person",
+
+  name: "Ari Puja Yuwana",
+
+  jobTitle: "IT System Specialist",
+
+  email: "mailto:aripujayuwana@gmail.com",
+
+  telephone: "+6282123925828",
+
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Bekasi",
+    addressCountry: "Indonesia",
+  },
+
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "Universitas Gunadarma",
+  },
+
+  url: "https://aripuja.vercel.app",
+
+  image: "https://aripuja.vercel.app/images/apy1.jpg",
+
+  sameAs: [
+    "https://linkedin.com/in/ari-puja-yuwana-a50745161",
+  ],
+};
 
 export default function RootLayout({
   children,
@@ -96,6 +135,13 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-background text-foreground">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(personSchema),
+          }}
+        />
+
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
