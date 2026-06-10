@@ -17,27 +17,72 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ari Puja Yuwana | IT System Specialist",
+  metadataBase: new URL("https://your-domain.vercel.app"),
+
+  title: {
+    default: "Ari Puja Yuwana",
+    template: "%s | Ari Puja Yuwana",
+  },
 
   description:
-    "Building Reliable Systems, Infrastructure & Digital Solutions",
+    "IT System Specialist experienced in Enterprise Infrastructure, Monitoring Systems, Technical Support, and Digital Solutions.",
 
   keywords: [
+    "Ari Puja Yuwana",
     "IT System Specialist",
-    "IT Support",
     "System Administrator",
     "Infrastructure Engineer",
-    "Portfolio",
-    "Ari Puja Yuwana",
+    "IT Support",
+    "Monitoring System",
+    "Laravel",
+    "Next.js",
+    "Microsoft Intune",
+    "Azure",
   ],
 
+  authors: [
+    {
+      name: "Ari Puja Yuwana",
+    },
+  ],
+
+  creator: "Ari Puja Yuwana",
+
   openGraph: {
-    title: "Ari Puja Yuwana | IT System Specialist",
+    title: "Ari Puja Yuwana",
     description:
-      "Building Reliable Systems, Infrastructure & Digital Solutions",
-    images: ["/og-image.jpg"],
+      "Enterprise Infrastructure & Digital Solutions",
+
+    url: "https://aripuja.vercel.app/",
+
+    siteName: "Ari Puja Yuwana",
+
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+      },
+    ],
+
+    locale: "en_US",
+    type: "website",
   },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Ari Puja Yuwana",
+    description:
+      "Enterprise Infrastructure & Digital Solutions",
+    images: ["/opengraph-image"],
+  },
+  icons: {
+  icon: "/favicon.svg",
+},
+
 };
+
+
 
 export default function RootLayout({
   children,
