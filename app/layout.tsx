@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 
 import { ThemeProvider } from "@/components/theme-provider";
 import ScrollProgress from "@/components/layout/ScrollProgress";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import "./globals.css";
 
@@ -152,6 +153,7 @@ export default function RootLayout({
 
           {children}
         </ThemeProvider>
+          <GoogleAnalytics gaId="G-NTV3V8PB6J" />
       </body>
     </html>
   );
