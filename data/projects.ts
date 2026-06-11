@@ -93,7 +93,7 @@ demoUrl: "",
 
   category: "Enterprise Mobile Solution",
 
-  image: "/images/projects/mobile-app.jpg",
+  image: "/images/projects/mobile-app1.jpg",
 
 
   description:
