@@ -104,7 +104,7 @@ demoUrl: "",
 
   challenges: [
     "Integrating mobile application with enterprise APIs",
-    "Maintaining performance across different Android devices",
+    "Maintaining performance across different Android & iOS devices",
     "Providing a simple and user-friendly interface",
     "Ensuring reliable data synchronization",
   ],
@@ -118,6 +118,7 @@ demoUrl: "",
 
   technologies: [
     "Android",
+    "iOS",
     "Java",
     "REST API",
     "JSON",

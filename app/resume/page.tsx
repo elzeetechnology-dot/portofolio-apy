@@ -264,7 +264,7 @@ export default function ResumePage() {
 
 {
   title: "Operational Mobile Application",
-  tech: "Android • Java • REST API",
+  tech: "Android • Java • REST API • iOS",
 },
             ].map((project) => (
               <div
